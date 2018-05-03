@@ -175,10 +175,73 @@ img {
   flex-wrap: wrap;
   margin-top: 50px; }
 
-.ad {
-  -webkit-flex-basis: 25%;
-  -ms-flex-preferred-size: 25%;
-  flex-basis: 25%; }
+.ad__main-info {
+  line-height: 1.25rem;
+  font-family: "Exo 2", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500; }
+
+.ad__desc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 30px; }
+
+.ad__name {
+  color: #00aaff; }
+
+.ad__price {
+  color: #26404d;
+  font-size: 1.125rem; }
+
+.ad__favorite {
+  color: #e6eef2;
+  font-size: 1.875rem;
+  font-weight: 400;
+  cursor: pointer; }
+  .ad__favorite:hover {
+    color: #ffd400; }
+
+.open-img {
+  width: 3.125rem;
+  height: 3.125rem;
+  background-color: #00aaff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+  opacity: 0; }
+
+.ad__photo {
+  position: relative; }
+  .ad__photo:hover .open-img {
+    opacity: 1; }
 
 .seo-text {
   padding: 50px 0;
@@ -297,3 +360,21 @@ body, html {
   color: #26404d;
   margin: 0 0 20px;
   line-height: 0.75em; }
+
+.ad {
+  -webkit-flex-basis: 25%;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  background-color: #fff;
+  max-width: 290px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0.313rem 0.938rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.313rem 0.938rem rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 0.188rem;
+  border-radius: 0.188rem; }
+  .ad:nth-of-type(4n) {
+    margin-right: 0; }
+  .ad:hover .ad__name {
+    color: #66cc00; }
