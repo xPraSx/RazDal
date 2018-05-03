@@ -4,6 +4,7 @@
 @import "_category";
 @import "_new-ad";
 @import "_seo-text";
+@import "_advert";
 @import "_page-footer";
 
 body,html{
@@ -46,21 +47,3 @@ body,html{
 	line-height: 0.75em;
 }
 
-.ad{
-	flex-basis: 25%;
-	background-color: #fff;
-	max-width: 290px;
-	margin-bottom: 30px;
-	margin-right: 30px;
-	cursor: pointer;
-	&:nth-of-type(4n){
-		margin-right: 0;
-	}
-	box-shadow: 0 0.313rem 0.938rem rgba(0, 0, 0, 0.3);
-	border-radius: 0.188rem;
-	&:hover{
-        .ad__name{
-            color: $mainColor;
-        }
-    }
-}
