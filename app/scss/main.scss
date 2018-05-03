@@ -4,6 +4,7 @@
 @import "_category";
 @import "_new-ad";
 @import "_seo-text";
+@import "_page-footer";
 
 body,html{
 	height: 100%;
@@ -23,6 +24,7 @@ body,html{
 		flex-wrap: wrap;
 	}
 	&--flex-between{
+		display: flex;
 		justify-content: space-between;
 	}
 }
@@ -33,5 +35,13 @@ body,html{
 	font-size: 1.75rem;
 	font-weight: 500;
 	margin: 0;
+	line-height: 0.75em;
+}
+
+.section-subtitle{
+	font-size: 1.125rem;
+	font-weight: 500;
+	color: rgb(38, 64, 77);
+	margin: 0 0 20px;
 	line-height: 0.75em;
 }

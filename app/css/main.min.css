@@ -17,10 +17,20 @@
   src: url("../fonts/fa-solid-900.eot");
   src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fa-solid-900.svg#fontawesome") format("svg"); }
 
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/fa-brands-400.eot");
+  src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype"), url("../fonts/fa-brands-400.svg#fontawesome") format("svg"); }
+
 .fa,
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
+
+.fab {
+  font-family: 'Font Awesome 5 Brands'; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -181,6 +191,68 @@ img {
     line-height: 1.25rem;
     margin: 30px 0 0; }
 
+.page-footer {
+  padding: 50px 0; }
+
+.tags {
+  max-width: 590px;
+  width: 100%;
+  line-height: 1.25em; }
+
+.logo-copyright img {
+  margin-bottom: 20px; }
+
+.copyright {
+  color: #26404d;
+  font-family: "Exo 2", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.25rem; }
+
+.tags__item {
+  color: #00aaff;
+  font-family: "Exo 2", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 0.75em;
+  text-decoration: underline; }
+  .tags__item:hover {
+    color: #66cc00; }
+
+.social-links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  margin: 0 0 5px; }
+  .social-links li {
+    list-style: none; }
+
+.social-item {
+  font-size: 1.25rem;
+  margin-right: 10px; }
+  .social-item.facebook {
+    color: #3b5999; }
+  .social-item.twitter {
+    color: #55acee; }
+  .social-item.google {
+    color: #dd4b39; }
+  .social-item.linkedin {
+    color: #0077b5; }
+  .social-item.instagram {
+    color: #e4405f; }
+
+.call-action {
+  color: #26404d;
+  font-family: "Exo 2", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300; }
+  .call-action a {
+    color: #00aaff; }
+    .call-action a:hover {
+      color: #66cc00; }
+
 body, html {
   height: 100%;
   padding: 0;
@@ -202,6 +274,10 @@ body, html {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .container--flex-between {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
@@ -213,4 +289,11 @@ body, html {
   font-size: 1.75rem;
   font-weight: 500;
   margin: 0;
+  line-height: 0.75em; }
+
+.section-subtitle {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #26404d;
+  margin: 0 0 20px;
   line-height: 0.75em; }
