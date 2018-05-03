@@ -1,6 +1,7 @@
 @import "_fonts";
 @import "_vars";
 @import "_base";
+@import "_category";
 
 body,html{
 	height: 100%;
@@ -8,4 +9,15 @@ body,html{
 	background-color: white;
 	color: #000;
 	font-family: $mainFont;
+	margin: 0;
+}
+
+.container{
+	width: 100%;
+	max-width: 1250px;
+	margin: 0 auto;
+	&--flex{
+		display: flex;
+		flex-wrap: wrap;
+	}
 }

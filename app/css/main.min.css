@@ -59,9 +59,90 @@ img {
 .text-center {
   text-align: center; }
 
+.category {
+  padding: 10px 0; }
+
+.category__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-basis: 25%;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  padding: 30px 40px;
+  cursor: pointer; }
+  .category__item:hover {
+    -webkit-box-shadow: 0 0.313rem 0.938rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.313rem 0.938rem rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 0.188rem;
+    border-radius: 0.188rem; }
+  .category__item i {
+    font-size: 1.875rem; }
+  .category__item--child {
+    color: #ff5722; }
+  .category__item--house {
+    color: #2196f3; }
+  .category__item--car {
+    color: #ff9800; }
+  .category__item--gears {
+    color: #8bc34a; }
+  .category__item--work {
+    color: #795548; }
+  .category__item--animal {
+    color: #00bcd4; }
+  .category__item--nat {
+    color: #4caf50; }
+  .category__item--elec {
+    color: #ffc107; }
+  .category__item--biz {
+    color: #3f51b5; }
+  .category__item--moda {
+    color: #ff4081; }
+  .category__item--sport {
+    color: #009688; }
+  .category__item--present {
+    color: #f44336; }
+  .category__item--hand {
+    color: #cddc39; }
+  .category__item--bulding {
+    color: #03a9f4; }
+
+.category__desc {
+  line-height: 1.25rem;
+  color: #6b8a99;
+  font-size: 0.875rem;
+  margin-left: 10px; }
+
+.category__name {
+  color: #26404d;
+  font-weight: 500;
+  margin: 0; }
+
+.category__sum {
+  font-weight: 300; }
+
 body, html {
   height: 100%;
   padding: 0;
   background-color: white;
   color: #000;
-  font-family: "Exo 2", sans-serif; }
+  font-family: "Exo 2", sans-serif;
+  margin: 0; }
+
+.container {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto; }
+  .container--flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
