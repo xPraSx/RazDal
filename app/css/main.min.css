@@ -170,6 +170,17 @@ img {
   -ms-flex-preferred-size: 25%;
   flex-basis: 25%; }
 
+.seo-text {
+  padding: 50px 0;
+  border-bottom: 0.063rem solid #e6eef2; }
+  .seo-text p {
+    color: #6b8a99;
+    font-family: "Exo 2", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+    margin: 30px 0 0; }
+
 body, html {
   height: 100%;
   padding: 0;
