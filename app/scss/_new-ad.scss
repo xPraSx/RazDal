@@ -1,0 +1,39 @@
+.new-ads{
+    background-color: rgb(230, 238, 242);
+    padding: 50px 0;
+    &>.container{
+        align-items: center;
+    }
+}
+
+.new-ads__items{
+    width: 100%;
+}
+
+.new-ads__filter{
+    display: flex;
+}
+
+.news-filter-name{
+    margin-left: 30px;
+}
+
+.news-filter-name{
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: rgb(107, 138, 153);
+    cursor: pointer;
+    &:hover{
+        color: $mainColor;
+    }
+}
+
+.new-ads__items{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.ad{
+    flex-basis: 25%;
+}

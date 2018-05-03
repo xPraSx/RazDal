@@ -2,6 +2,7 @@
 @import "_vars";
 @import "_base";
 @import "_category";
+@import "_new-ad";
 
 body,html{
 	height: 100%;
@@ -20,4 +21,16 @@ body,html{
 		display: flex;
 		flex-wrap: wrap;
 	}
+	&--flex-between{
+		justify-content: space-between;
+	}
+}
+
+.section-title{
+	color: rgb(38, 64, 77);
+	font-family: $mainFont;
+	font-size: 1.75rem;
+	font-weight: 500;
+	margin: 0;
+	line-height: 0.75em;
 }

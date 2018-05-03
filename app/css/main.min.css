@@ -126,6 +126,50 @@ img {
 .category__sum {
   font-weight: 300; }
 
+.new-ads {
+  background-color: #e6eef2;
+  padding: 50px 0; }
+  .new-ads > .container {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+.new-ads__items {
+  width: 100%; }
+
+.new-ads__filter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.news-filter-name {
+  margin-left: 30px; }
+
+.news-filter-name {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #6b8a99;
+  cursor: pointer; }
+  .news-filter-name:hover {
+    color: #66cc00; }
+
+.new-ads__items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 50px; }
+
+.ad {
+  -webkit-flex-basis: 25%;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%; }
+
 body, html {
   height: 100%;
   padding: 0;
@@ -146,3 +190,16 @@ body, html {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
+  .container--flex-between {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+
+.section-title {
+  color: #26404d;
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin: 0;
+  line-height: 0.75em; }
