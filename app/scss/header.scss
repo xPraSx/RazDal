@@ -36,6 +36,10 @@
 	font-weight: 300;
 	text-decoration: underline;
 	text-decoration: none;
+	&:hover{
+		cursor: pointer;
+		text-decoration: underline;
+	}
 }
 
 .trigger-btn{
@@ -51,6 +55,10 @@
 	display: inline-block;
 	padding: 0 70px;
 	cursor: pointer;
+	transition: all .4s;
+	&:hover{
+		background-color: $accentColor;
+	}
 }
 
 .push-info{
@@ -65,6 +73,8 @@
 	width: 50px;
 	height: 50px;
 	background-color: rgba(38, 64, 77,0.1);
+	cursor: pointer;
+	transition: all .4s;
 	i{
 		font-size: 1.125rem;
 		color: rgb(38, 64, 77);
@@ -73,6 +83,11 @@
 	}
 	&:nth-of-type(2n){
 		border-top: 0.063rem solid rgba(38, 64, 77,0.1);
+	}
+	&:hover{
+		background-color: rgb(38, 64, 77);
+		i{color: rgb(255, 255, 255);}
+		.push-info__val{color: #fff;}
 	}
 }
 
@@ -126,4 +141,8 @@
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 0.035rem;
+	transition: all .4s;
+	&:hover{
+		background-color: rgb(172, 230, 115);
+	}
 }
