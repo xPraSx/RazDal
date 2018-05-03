@@ -1,6 +1,11 @@
 @import "_fonts";
 @import "_vars";
 @import "_base";
+@import "_category";
+@import "_new-ad";
+@import "_seo-text";
+@import "_advert";
+@import "_page-footer";
 
 body,html{
 	height: 100%;
@@ -8,4 +13,37 @@ body,html{
 	background-color: white;
 	color: #000;
 	font-family: $mainFont;
+	margin: 0;
 }
+
+.container{
+	width: 100%;
+	max-width: 1250px;
+	margin: 0 auto;
+	&--flex{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&--flex-between{
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.section-title{
+	color: rgb(38, 64, 77);
+	font-family: $mainFont;
+	font-size: 1.75rem;
+	font-weight: 500;
+	margin: 0;
+	line-height: 0.75em;
+}
+
+.section-subtitle{
+	font-size: 1.125rem;
+	font-weight: 500;
+	color: rgb(38, 64, 77);
+	margin: 0 0 20px;
+	line-height: 0.75em;
+}
+

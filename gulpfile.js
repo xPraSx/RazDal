@@ -28,7 +28,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 		},
 		notify: false, // Отключаем уведомления
 		open: true,
-		tunnel: false,
+		// tunnel: false,
 		// tunnel: "mysite" //Demonstration page: http://mysite.localtunnel.me
 	});
 });

@@ -1,0 +1,76 @@
+.category{
+    padding: 10px 0;
+}
+.category__item{
+    display: flex;
+    align-items: center;
+    flex-basis: 25%;
+    padding: 30px 40px;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0 0.313rem 0.938rem rgba(0, 0, 0, 0.1);
+        border-radius: 0.188rem;
+    }
+    i{
+        font-size: 1.875rem;
+    }
+    &--child{
+        color: rgb(255, 87, 34);
+    }
+    &--house{
+        color: rgb(33, 150, 243);
+    }
+    &--car{
+        color: rgb(255, 152, 0);
+    }
+    &--gears{
+        color: rgb(139, 195, 74);
+    }
+    &--work{
+        color: rgb(121, 85, 72);
+    }
+    &--animal{
+        color: rgb(0, 188, 212);
+    }
+    &--nat{
+        color: rgb(76, 175, 80);
+    }
+    &--elec{
+        color: rgb(255, 193, 7);
+    }
+    &--biz{
+        color: rgb(63, 81, 181);
+    }
+    &--moda{
+        color: rgb(255, 64, 129);
+    }
+    &--sport{
+        color: rgb(0, 150, 136);
+    }
+    &--present{
+        color: rgb(244, 67, 54);
+    }
+    &--hand{
+        color: rgb(205, 220, 57);
+    }
+    &--bulding{
+        color: rgb(3, 169, 244);
+    }
+}
+
+.category__desc{
+    line-height: 1.25rem;
+    color: rgb(107, 138, 153);
+    font-size: 0.875rem;
+    margin-left: 10px;
+}
+
+.category__name{
+    color: rgb(38, 64, 77);
+    font-weight: 500;
+    margin: 0;
+}
+
+.category__sum{
+    font-weight: 300;
+}

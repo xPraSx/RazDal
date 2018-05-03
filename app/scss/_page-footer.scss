@@ -1,0 +1,77 @@
+.page-footer{
+    padding: 50px 0;
+}
+
+.tags{
+    max-width: 590px;
+    width: 100%;
+    line-height: 1.25em;
+}
+
+.logo-copyright{
+    img{
+        margin-bottom: 20px;
+    }
+}
+
+.copyright{
+    color: rgb(38, 64, 77);
+    font-family: $mainFont;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+}
+
+.tags__item{
+    color: rgb(0, 170, 255);
+    font-family: $mainFont;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 0.75em;
+    text-decoration: underline;
+    &:hover{
+        color: $mainColor;
+    }
+}
+
+.social-links{
+    display: flex;
+    padding-left: 0;
+    margin: 0 0 5px;
+    li{
+        list-style: none;
+    }
+}
+
+.social-item{
+    font-size: 1.25rem;
+    margin-right: 10px;
+    &.facebook{
+        color: rgb(59, 89, 153);
+    }
+    &.twitter{
+        color: rgb(85, 172, 238);
+    }
+    &.google{
+        color: rgb(221, 75, 57);
+    }
+    &.linkedin{
+        color: rgb(0, 119, 181);
+    }
+    &.instagram{
+        color: rgb(228, 64, 95);
+    }
+}
+
+.call-action{
+    color: rgb(38, 64, 77);
+    font-family: $mainFont;
+    font-size: 0.875rem;
+    font-weight: 300;
+    a{
+        color: rgb(0, 170, 255);
+        &:hover{
+            color: $mainColor;
+        }
+    }
+}
