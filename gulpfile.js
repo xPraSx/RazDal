@@ -82,7 +82,7 @@ gulp.task('sprite', function() {
 });
 
 
-gulp.task('build', ['clean', 'img', 'scss', 'scripts'], function() {
+gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 
 	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
 		'app/css/main.min.css',
@@ -93,6 +93,9 @@ gulp.task('build', ['clean', 'img', 'scss', 'scripts'], function() {
 
 	var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
 	.pipe(gulp.dest('build/fonts'))
+
+	var buildFonts = gulp.src('app/img/**/*') // Переносим картинки в продакшен
+	.pipe(gulp.dest('build/img'))
 
 	var buildJs = gulp.src('app/js/**/*') // Переносим скрипты в продакшен
 	.pipe(gulp.dest('build/js'))

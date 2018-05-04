@@ -47,6 +47,12 @@
     font-size: 0.875rem;
     font-weight: 300;
     margin-bottom: 30px;
+    @media only screen and (max-width : 992px) {
+        max-width: 48%;
+    }
+    @media only screen and (max-width : 480px) {
+        max-width: 100%;
+    }
 }
 
 .textarea{
