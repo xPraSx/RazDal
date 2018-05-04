@@ -2,10 +2,6 @@
     padding: 0;
 }
 
-.fancybox-slide--html{
-    padding: 20px;
-}
-
 .fancybox-close-small{
     display: none;
 }
@@ -37,10 +33,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 30px 17px 30px;
-    @media only screen and (max-width : 768px) {
-        flex-direction: column;
-        min-height: 170px;
-    }
 }
 
 .text-input{
@@ -55,12 +47,6 @@
     font-size: 0.875rem;
     font-weight: 300;
     margin-bottom: 30px;
-    @media only screen and (max-width : 992px) {
-        max-width: 48%;
-    }
-    @media only screen and (max-width : 480px) {
-        max-width: 100%;
-    }
 }
 
 .textarea{
