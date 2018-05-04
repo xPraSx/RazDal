@@ -21,8 +21,11 @@
           <div class="logo">
             <img src="img/logo.png" alt="logo">
           </div>
-          <div class="trigger-btn">подать объявление</div>  
-          <div class="user-info">
+          <div class="trigger-btn desctop-header-trigger">подать объявление</div>
+          <div class="mobile-trigger-btn">
+            <i class="fas fa-plus"></i>
+          </div>  
+          <div class="user-info" style="display:none;">
               <div class="user-info__pult">
                 <div class="user-info__name">Валерия Никольская</div>    
                 <div class="user-info__enter">Личный кабинет</div>                
@@ -31,7 +34,7 @@
                 <img src="img/ava.jpg" alt="ava">
               </div>
           </div>
-          <div class="push-info">
+          <div class="push-info" style="display:none;">
             <div class="push-info__item">
                 <i class="fas fa-bell"></i>
                 <div class="push-info__val">24</div>
@@ -41,7 +44,8 @@
                 <div class="push-info__val">12</div>
             </div>
           </div>
-          <button class="action-btn action-btn--enter" style="display:none;">войти</button>
+          <button class="action-btn action-btn--enter">войти</button>
+          <button class="action-btn action-btn--mobile"><i class="fas fa-sign-in-alt"></i></button>
         </div>
       </div>
       <div class="page-header__bottom">
@@ -49,14 +53,14 @@
           <form action="/" class="seacrh-form">
             <input type="text" class="search-input search-input--main-input" placeholder="Что вы ищете?"/>
             <input type="text" class="search-input search-input--location-input" placeholder="Регион или город"/>
-            <button class="action-btn" type="submit">Поиск</button>
+            <button class="action-btn action-btn--submit" type="submit">Поиск</button>
           </form>              
         </div>
       </div>    
     </header>
 
     <div class="category">
-      <div class="container container--flex">
+      <div class="container container--flex container--flex-center">
         <div class="category__item category__item--child">
           
             <i class="fas fa-futbol"></i>
@@ -177,8 +181,8 @@
       <div class="container container--flex container--flex-between">
         <h2 class="section-title">Новые объявления</h2>
         <div class="new-ads__filter">
-          <div class="news-filter-name">Все объявления</div>
-          <div class="news-filter-name">Только премиум</div>
+          <div class="news-filter-name">Все <span class="tablet-hidden"> объявления</span></div>
+          <div class="news-filter-name"><span class="tablet-hidden">Только</span>  премиум</div>
         </div> 
         <div class="new-ads__items">
           <div class="ad">
@@ -363,7 +367,7 @@
           <a href="/" class="tags__item">Бишкек</a>   
         </div>
         <div class="social-bar">
-          <div class="section-subtitle">RazDal в социальных сетях</div>
+          <div class="section-subtitle tablet-hidden">RazDal в социальных сетях</div>
           <ul class="social-links">
             <li><a href="/" class="social-item facebook"><i class="fab fa-facebook"></i></a></li>
             <li><a href="/" class="social-item twitter"><i class="fab fa-twitter-square"></i></a></li>
