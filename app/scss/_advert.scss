@@ -1,3 +1,30 @@
+.slick-slide{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.ads-slider{
+    position: relative;
+    .slick-prev,.slick-next{
+        text-indent: -9000px;
+        width: 3.125rem;
+        height: 3.125rem;
+        background-color: rgb(38, 64, 77);
+        background-image: url('../img/slder-arrow.png');
+        border-radius: 50%;
+        position: absolute;
+        top:50%;
+        margin-top: -25px;
+    }
+    .slick-prev{
+        left: 5px;
+        transform: rotate(180deg);
+    }
+    .slick-next{
+        right: 5px;
+    }
+}
+
 .ad{
 	flex-basis: 25%;
 	background-color: #fff;
