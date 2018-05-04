@@ -231,3 +231,5 @@ img {
   transition: all .4s; }
   .action-btn:hover {
     background-color: #ace673; }
+  .action-btn--enter {
+    background-color: #e6eef2; }

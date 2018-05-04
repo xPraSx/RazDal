@@ -41,6 +41,7 @@
                 <div class="push-info__val">12</div>
             </div>
           </div>
+          <button class="action-btn action-btn--enter" style="display:none;">войти</button>
         </div>
       </div>
       <div class="page-header__bottom">
@@ -369,10 +370,30 @@
             <li><a href="/" class="social-item linkedin"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="/" class="social-item instagram"><i class="fab fa-instagram"></i></a></li>
           </ul>
-          <span class="call-action">Возникли вопросы? <a href="/">Свяжитесь с нами!</a></span>
+          <span class="call-action">Возникли вопросы? <a data-fancybox data-src="#hidden-content" href="javascript:;">Свяжитесь с нами!</a></span>
         </div> 
       </div>
     </footer>
+
+    <div style="display: none;" id="hidden-content">
+      <form action="/" class="contact-form">
+        <div class="contact-form__title">
+          <h2 class="section-title">Свяжитесь с нами</h2>
+          <span class="section-title">info@razdal.com.ua</span>
+        </div>
+        <div class="contact-form__edit-area">
+          <input type="text" class="text-input" placeholder="Имя">
+          <input type="email" class="text-input" required placeholder="Email">
+          <input type="text" class="text-input" placeholder="Тема сообщения">
+          <input type="tel" class="text-input" placeholder="Телефон">
+          <textarea name="textarea" id="textarea" cols="30" rows="10" class="textarea"></textarea>
+        </div>
+        <div class="contact-form__action-area">
+          <img src="img/captacha.jpg" alt="captach">
+          <button class="trigger-btn">Отправить сообщение</button>
+        </div>
+      </form>
+    </div>
     <!--[if lt IE 9]>
     <script src="libs/html5shiv/es5-shim.min.js"></script>
     <script src="libs/html5shiv/html5shiv.min.js"></script>
