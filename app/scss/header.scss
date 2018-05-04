@@ -18,12 +18,18 @@
 .user-info{
 	display: flex;
 	align-items: center;
+	@media only screen and (max-width : 992px) {
+		margin-right: 50px;
+	}
 }
 
 .user-info__pult{
 	text-align: right;
 	line-height: 1.25rem;
 	margin-right: 10px;
+	@media only screen and (max-width : 992px) {
+		display: none;
+	}
 }
 
 .user-info__name{
@@ -59,6 +65,33 @@
 	&:hover{
 		background-color: $accentColor;
 	}
+	&--fate{
+		height: 3.125rem;
+		padding: 0 28px;
+	}
+	@media only screen and (max-width : 992px) {
+		padding: 0 30px;
+	}
+	&.desctop-header-trigger{
+		@media only screen and (max-width : 768px) {
+			display: none;
+		}
+	}
+}
+
+.mobile-trigger-btn{
+	@media only screen and (min-width : 769px) {
+		display: none;
+	}
+	width: 2.5rem;
+	height: 2.5rem;
+	background-color: $mainColor;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.875rem;
+	color: #fff;
 }
 
 .push-info{
@@ -116,17 +149,24 @@
 	padding: 0 35px;
 	height: 2.5rem;
 	border-radius: 0.188rem;
+	margin-right: 30px;
 	&--main-input{
 		width: 100%;
 		max-width: 48.125rem;
 		background: #fff url(../img/ic/search.svg) no-repeat 10px center;
 		background-size: 16px 15px;
+		@media only screen and (max-width : 768px) {
+			margin: 0 20px;
+		}
 	}
 	&--location-input{
 		width: 100%;
 		max-width: 18.125rem;
 		background: #fff url(../img/ic/map-marker.svg) no-repeat 10px center;
 		background-size: 12px 15px;
+		@media only screen and (max-width : 768px) {
+			display: none;
+		}
 	}
 }
 
@@ -144,5 +184,30 @@
 	transition: all .4s;
 	&:hover{
 		background-color: rgb(172, 230, 115);
+	}
+	&--enter{
+		background-color: rgb(230, 238, 242);
+		@media only screen and (max-width : 768px) {
+			display: none;
+		}
+	}
+	&--mobile{
+		@media only screen and (max-width : 768px) {
+			display: flex;
+		}
+		@media only screen and (min-width : 769px) {
+			display: none;
+		}
+		width: 2.5rem;
+		height: 2.5rem;
+		background-color: rgb(230, 238, 242);
+		border-radius: 50%;
+		padding: 0;
+		justify-content: center;
+	}
+	&--submit{
+		@media only screen and (max-width : 768px) {
+			display: none;
+		}
 	}
 }

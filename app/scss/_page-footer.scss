@@ -1,16 +1,40 @@
 .page-footer{
     padding: 50px 0;
+    &>.container{
+        @media only screen and (max-width : 768px) {
+            padding: 0;
+        }
+    }
 }
 
 .tags{
     max-width: 590px;
     width: 100%;
     line-height: 1.25em;
+    @media only screen and (max-width : 1350px) {
+        max-width: 400px;
+    }
+    @media only screen and (max-width : 992px) {
+        margin: 0 30px;
+    }
+    @media only screen and (max-width : 768px) {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
 
 .logo-copyright{
     img{
         margin-bottom: 20px;
+    }
+    @media only screen and (max-width : 768px) {
+        width: 100%;
+        order:1;
+        text-align: center;
+        padding-top: 30px;
+        img{
+            display: none;
+        }
     }
 }
 
@@ -34,10 +58,27 @@
     }
 }
 
+.social-bar{
+    @media only screen and (max-width : 768px) {
+        width: 100%;
+        text-align: center;
+        border-top: 0.063rem solid rgb(230, 238, 242);
+        border-bottom: 0.063rem solid rgb(230, 238, 242);
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .social-links{
     display: flex;
     padding-left: 0;
     margin: 0 0 5px;
+    @media only screen and (max-width : 768px) {
+        justify-content: center;
+        order:1;
+        margin-bottom: 30px;
+    }
     li{
         list-style: none;
     }

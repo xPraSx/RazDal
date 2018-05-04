@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <link rel="stylesheet" href="css/fonts.min.css">
     <link rel="stylesheet" href="css/header.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.min.css">
@@ -13,19 +12,393 @@
   </head>
   <body>
     
-    <!-- header styles -->
-    <style>
-      
-    </style>
+  <!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+  <style></style>
 
+    <header class="page-header">
+      <div class="container">
+        <div class="page-header__top">
+          <div class="logo">
+            <img src="img/logo.png" alt="logo">
+          </div>
+          <div class="trigger-btn desctop-header-trigger">подать объявление</div>
+          <div class="mobile-trigger-btn">
+            <i class="fas fa-plus"></i>
+          </div>  
+          <div class="user-info" style="display:none;">
+              <div class="user-info__pult">
+                <div class="user-info__name">Валерия Никольская</div>    
+                <div class="user-info__enter">Личный кабинет</div>                
+              </div>
+              <div class="user-info__avatar">
+                <img src="img/ava.jpg" alt="ava">
+              </div>
+          </div>
+          <div class="push-info" style="display:none;">
+            <div class="push-info__item">
+                <i class="fas fa-bell"></i>
+                <div class="push-info__val">24</div>
+            </div>
+            <div class="push-info__item">
+                <i class="fas fa-th-list"></i>
+                <div class="push-info__val">12</div>
+            </div>
+          </div>
+          <button class="action-btn action-btn--enter">войти</button>
+          <button class="action-btn action-btn--mobile"><i class="fas fa-sign-in-alt"></i></button>
+        </div>
+      </div>
+      <div class="page-header__bottom">
+        <div class="container">
+          <form action="/" class="seacrh-form">
+            <input type="text" class="search-input search-input--main-input" placeholder="Что вы ищете?"/>
+            <input type="text" class="search-input search-input--location-input" placeholder="Регион или город"/>
+            <button class="action-btn action-btn--submit" type="submit">Поиск</button>
+          </form>              
+        </div>
+      </div>    
+    </header>
 
-    <!-- Здесь пишем код -->
+    <div class="category">
+      <div class="container container--flex container--flex-center">
+        <div class="category__item category__item--child">
+          
+            <i class="fas fa-futbol"></i>
+           <div class="category__desc"> 
+            <h4 class="category__name">Детский мир</h4>
+            <span class="category__sum">1024 объявлений</span>
+          </div>
+        </div>
+        <div class="category__item category__item--house">
+          
+            <i class="fas fa-home"></i>
+            <div class="category__desc">
+            <h4 class="category__name">Недвижимость</h4>
+            <span class="category__sum">1024 объявлений</span>
+          </div>
+        </div>
+        <div class="category__item category__item--car">
+          
+            <i class="fas fa-car"></i>
+          <div class="category__desc">  
+            <h4 class="category__name">Транспорт</h4>
+            <span class="category__sum">1024 объявлений</span>
+          </div>
+        </div>
+        <div class="category__item category__item--gears">
+          
+              <i class="fas fa-cog"></i>
+              <div class="category__desc">
+            <h4 class="category__name">Запчасти для транспорта</h4>
+            <span class="category__sum">1024 объявлений</span>
+          </div>
+        </div>
+        <div class="category__item category__item--work">
+          
+            <i class="fas fa-briefcase"></i>
+           <div class="category__desc"> 
+            <h4 class="category__name">Работа</h4>
+            <span class="category__sum">1024 объявлений</span>
+          </div>
+        </div>
+        <div class="category__item category__item--animal">
+          
+            <i class="fas fa-paw"></i>
+          <div class="category__desc">  
+            <h4 class="category__name">Животные</h4>
+            <span class="category__sum">1024 объявлений</span>
+          </div>
+        </div>
+        <div class="category__item category__item--nat">
+          <i class="fas fa-leaf"></i>
+          <div class="category__desc">
+            <h4 class="category__name">Дом и сад</h4>
+            <span class="category__sum">1024 объявлений</span>
+          </div>
+        </div>
+        <div class="category__item category__item--elec">
+          
+            <i class="fas fa-plug"></i>
+           <div class="category__desc"> 
+            <h4 class="category__name">Электроника</h4>
+            <span class="category__sum">1024 объявлений</span>
+          </div>
+        </div>
+        <div class="category__item category__item--biz">
+          
+            <i class="fas fa-users"></i>
+            <div class="category__desc">
+            <h4 class="category__name">Бизнес и услуги</h4>
+            <span class="category__sum">1024 объявлений</span>
+            </div>
+          </div>
 
+        <div class="category__item category__item--moda">
+          
+            <i class="fas fa-gem"></i>
+            <div class="category__desc">
+            <h4 class="category__name">Мода и стиль</h4>
+            <span class="category__sum">1024 объявлений</span>
+          </div>
+        </div>
+        <div class="category__item category__item--sport">
+          
+            <i class="fas fa-bicycle"></i>
+            <div class="category__desc">
+            <h4 class="category__name">Хобби, отдых и спорт</h4>
+            <span class="category__sum">1024 объявлений</span>
+          </div>
+        </div>
+        <div class="category__item category__item--present">
+          
+            <i class="fas fa-gift"></i>
+            <div class="category__desc">
+            <h4 class="category__name">Отдам даром</h4>
+            <span class="category__sum">1024 объявлений</span>
+          </div>
+        </div>
+        <div class="category__item category__item--hand">
+          
+            <i class="fas fa-handshake"></i>
+            <div class="category__desc">
+            <h4 class="category__name">Обмен</h4>
+            <span class="category__sum">1024 объявлений</span>
+          </div>
+        </div>
+        <div class="category__item category__item--bulding">
+          
+            <i class="fas fa-building"></i>
+            <div class="category__desc">
+            <h4 class="category__name">Жилье посуточно, тур поездки</h4>
+            <span class="category__sum">1024 объявлений</span>
+          </div>
+        </div> 
+      </div>  
+      </div>
+    </div>
 
+    <section class="new-ads">
+      <div class="container container--flex container--flex-between">
+        <h2 class="section-title">Новые объявления</h2>
+        <div class="new-ads__filter">
+          <div class="news-filter-name">Все <span class="tablet-hidden"> объявления</span></div>
+          <div class="news-filter-name"><span class="tablet-hidden">Только</span>  премиум</div>
+        </div> 
+        <div class="new-ads__items owl-carousel ads-slider">
+          <div class="ad">
+            <div class="ad__photo">
+              <img src="img/ad-photo.jpg" alt="h">
+              <div class="open-img">
+                  <i class="fas fa-search"></i>
+              </div>
+            </div>
+            <div class="ad__desc">
+              <div class="ad__main-info">
+                  <div class="ad__name">Honda CBR 600 F4i</div> 
+                  <div class="ad__price">100 000 грн</div> 
+              </div>
+              <div class="ad__favorite">
+                  <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="ad">
+            <div class="ad__photo">
+              <img src="img/ad-photo.jpg" alt="h">
+              <div class="open-img">
+                  <i class="fas fa-search"></i>
+              </div>
+            </div>
+            <div class="ad__desc">
+              <div class="ad__main-info">
+                  <div class="ad__name">Honda CBR 600 F4i</div> 
+                  <div class="ad__price">100 000 грн</div> 
+              </div>
+              <div class="ad__favorite">
+                  <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="ad">
+            <div class="ad__photo">
+              <img src="img/ad-photo.jpg" alt="h">
+              <div class="open-img">
+                  <i class="fas fa-search"></i>
+              </div>
+            </div>
+            <div class="ad__desc">
+              <div class="ad__main-info">
+                  <div class="ad__name">Honda CBR 600 F4i</div> 
+                  <div class="ad__price">100 000 грн</div> 
+              </div>
+              <div class="ad__favorite">
+                  <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="ad">
+            <div class="ad__photo">
+              <img src="img/ad-photo.jpg" alt="h">
+              <div class="open-img">
+                  <i class="fas fa-search"></i>
+              </div>
+            </div>
+            <div class="ad__desc">
+              <div class="ad__main-info">
+                  <div class="ad__name">Honda CBR 600 F4i</div> 
+                  <div class="ad__price">100 000 грн</div> 
+              </div>
+              <div class="ad__favorite">
+                  <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="ad">
+            <div class="ad__photo">
+              <img src="img/ad-photo.jpg" alt="h">
+              <div class="open-img">
+                  <i class="fas fa-search"></i>
+              </div>
+            </div>
+            <div class="ad__desc">
+              <div class="ad__main-info">
+                  <div class="ad__name">Honda CBR 600 F4i</div> 
+                  <div class="ad__price">100 000 грн</div> 
+              </div>
+              <div class="ad__favorite">
+                  <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="ad">
+            <div class="ad__photo">
+              <img src="img/ad-photo.jpg" alt="h">
+              <div class="open-img">
+                  <i class="fas fa-search"></i>
+              </div>
+            </div>
+            <div class="ad__desc">
+              <div class="ad__main-info">
+                  <div class="ad__name">Honda CBR 600 F4i</div> 
+                  <div class="ad__price">100 000 грн</div> 
+              </div>
+              <div class="ad__favorite">
+                  <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="ad">
+            <div class="ad__photo">
+              <img src="img/ad-photo.jpg" alt="h">
+              <div class="open-img">
+                  <i class="fas fa-search"></i>
+              </div>
+            </div>
+            <div class="ad__desc">
+              <div class="ad__main-info">
+                  <div class="ad__name">Honda CBR 600 F4i</div> 
+                  <div class="ad__price">100 000 грн</div> 
+              </div>
+              <div class="ad__favorite">
+                  <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="ad">
+            <div class="ad__photo">
+              <img src="img/ad-photo.jpg" alt="h">
+              <div class="open-img">
+                  <i class="fas fa-search"></i>
+              </div>
+            </div>
+            <div class="ad__desc">
+              <div class="ad__main-info">
+                  <div class="ad__name">Honda CBR 600 F4i</div> 
+                  <div class="ad__price">100 000 грн</div> 
+              </div>
+              <div class="ad__favorite">
+                  <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+    </section>
 
+    <section class="seo-text">
+      <div class="container">
+          <h2 class="section-title">Чем мы занимаемся?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta erat est, ut lobortis elit rutrum ac. Aenean vestibulum tortor eget est mattis, quis vulputate mi interdum. Suspendisse quis cursus lectus. Nunc non laoreet velit. Curabitur laoreet arcu ut placerat fermentum. Nullam lacus quam, rutrum vel ante quis, ullamcorper vestibulum nisl. Sed in cursus mauris, semper tristique velit. Ut lobortis scelerisque diam, ac iaculis dui pellentesque vel. Integer ante justo, consequat placerat volutpat a, aliquam nec ipsum.</p> 
+      </div>
+    </section>
 
+    <footer class="page-footer">
+      <div class="container container--flex-between">
+        <div class="logo-copyright">
+          <img src="img/big-logo.png" alt="logo">
+          <span class="copyright">© 2018 RazDal. Все права защищены.</span>
+        </div>
+        <div class="tags">
+          <h3 class="section-subtitle">Объявления со всей Украины</h3>
+          <a href="/" class="tags__item">Винница,</a>
+          <a href="/" class="tags__item">Днепр,</a>
+          <a href="/" class="tags__item">Донецк,</a>
+          <a href="/" class="tags__item">Житомир,</a>
+          <a href="/" class="tags__item">Запорожье,</a>
+          <a href="/" class="tags__item">Ивано-Франковск,</a>
+          <a href="/" class="tags__item">Киев,</a>
+          <a href="/" class="tags__item">Кропивницкий,</a>
+          <a href="/" class="tags__item">Луганск,</a>
+          <a href="/" class="tags__item">Луцк,</a>
+          <a href="/" class="tags__item">Львов,</a>
+          <a href="/" class="tags__item">Николаев,</a>
+          <a href="/" class="tags__item">Одесса,</a>
+          <a href="/" class="tags__item">Полтава,</a>
+          <a href="/" class="tags__item">Ровно,</a>
+          <a href="/" class="tags__item">Сумы,</a>
+          <a href="/" class="tags__item">Тернополь,</a>
+          <a href="/" class="tags__item">Ужгород,</a>
+          <a href="/" class="tags__item">Харьков,</a>
+          <a href="/" class="tags__item">Херсон,</a>
+          <a href="/" class="tags__item">Хмельницкий (город),</a>
+          <a href="/" class="tags__item">Черкассы,</a>
+          <a href="/" class="tags__item">Чернигов,</a>
+          <a href="/" class="tags__item">Черновцы,</a>
+          <a href="/" class="tags__item">Бишкек</a>   
+        </div>
+        <div class="social-bar">
+          <div class="section-subtitle tablet-hidden">RazDal в социальных сетях</div>
+          <ul class="social-links">
+            <li><a href="/" class="social-item facebook"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="/" class="social-item twitter"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="/" class="social-item google"><i class="fab fa-google-plus-square"></i></a></li>
+            <li><a href="/" class="social-item linkedin"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="/" class="social-item instagram"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+          <span class="call-action">Возникли вопросы? <a data-fancybox data-src="#hidden-content" href="javascript:;">Свяжитесь с нами!</a></span>
+        </div> 
+      </div>
+    </footer>
 
-
+    <div style="display: none;" id="hidden-content">
+      <form action="/" class="contact-form">
+        <div class="contact-form__title">
+          <h2 class="section-title">Свяжитесь с нами</h2>
+          <span class="section-title">info@razdal.com.ua</span>
+        </div>
+        <div class="contact-form__edit-area">
+          <input type="text" class="text-input" placeholder="Имя">
+          <input type="email" class="text-input" required placeholder="Email">
+          <input type="text" class="text-input" placeholder="Тема сообщения">
+          <input type="tel" class="text-input" placeholder="Телефон">
+          <textarea name="textarea" id="textarea" cols="30" rows="10" class="textarea text-input" placeholder="Я хочу спросить"></textarea>
+        </div>
+        <div class="contact-form__action-area">
+          <img src="img/captacha.jpg" alt="captach">
+          <button class="trigger-btn trigger-btn--fate">Отправить сообщение</button>
+        </div>
+      </form>
+    </div>
     <!--[if lt IE 9]>
     <script src="libs/html5shiv/es5-shim.min.js"></script>
     <script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -34,11 +407,14 @@
     <![endif]-->
 
     <!-- Load Scripts Start -->
-    <script>var scr = {"scripts":[
-      {"src" : "js/libs.min.js", "async" : false},
-      {"src" : "js/common.js", "async" : false}
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- <script>var scr = {"scripts":[
+      {"src" : "js/libs.min.js", "async" : true},
+      {"src" : "js/common.js", "async" : true}
       ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
-    </script>
+    </script> -->
     <!-- Load Scripts End -->
   </body>
 </html>

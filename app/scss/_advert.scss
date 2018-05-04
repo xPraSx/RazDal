@@ -1,3 +1,32 @@
+.slick-slide{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.ads-slider{
+    position: relative;
+    overflow: hidden;
+    .owl-prev,.owl-next{
+        text-indent: -9000px;
+        width: 3.125rem;
+        height: 3.125rem;
+        background-color: rgb(38, 64, 77);
+        background-image: url('../img/slder-arrow.png')!important;
+        border-radius: 50%;
+        position: absolute;
+        top:50%;
+        margin-top: -25px;
+        z-index: 10;
+    }
+    .owl-prev{
+        left: 0px;
+        transform: rotate(180deg);
+    }
+    .owl-next{
+        right: 0px;
+    }
+}
+
 .ad{
 	flex-basis: 25%;
 	background-color: #fff;
@@ -14,6 +43,16 @@
         .ad__name{
             color: $mainColor;
         }
+    }
+    @media only screen and (max-width : 1350px) {
+        flex-basis: 33%;
+        margin-right: 0;
+    }
+    @media only screen and (max-width : 1200px) {
+        margin-bottom: 3px;
+    }
+    @media only screen and (max-width : 768px) {
+        flex-basis: 100%;
     }
 }
 

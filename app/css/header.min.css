@@ -69,6 +69,10 @@ img {
 .text-center {
   text-align: center; }
 
+img {
+  max-width: 100%;
+  height: auto; }
+
 .page-header {
   display: block;
   position: relative; }
@@ -98,11 +102,17 @@ img {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media only screen and (max-width: 992px) {
+    .user-info {
+      margin-right: 50px; } }
 
 .user-info__pult {
   text-align: right;
   line-height: 1.25rem;
   margin-right: 10px; }
+  @media only screen and (max-width: 992px) {
+    .user-info__pult {
+      display: none; } }
 
 .user-info__name {
   font-weight: 500; }
@@ -136,6 +146,39 @@ img {
   transition: all .4s; }
   .trigger-btn:hover {
     background-color: #ffd400; }
+  .trigger-btn--fate {
+    height: 3.125rem;
+    padding: 0 28px; }
+  @media only screen and (max-width: 992px) {
+    .trigger-btn {
+      padding: 0 30px; } }
+  @media only screen and (max-width: 768px) {
+    .trigger-btn.desctop-header-trigger {
+      display: none; } }
+
+.mobile-trigger-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #66cc00;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  color: #fff; }
+  @media only screen and (min-width: 769px) {
+    .mobile-trigger-btn {
+      display: none; } }
 
 .push-info {
   position: absolute;
@@ -200,19 +243,26 @@ img {
   padding: 0 35px;
   height: 2.5rem;
   -webkit-border-radius: 0.188rem;
-  border-radius: 0.188rem; }
+  border-radius: 0.188rem;
+  margin-right: 30px; }
   .search-input--main-input {
     width: 100%;
     max-width: 48.125rem;
     background: #fff url(../img/ic/search.svg) no-repeat 10px center;
     -webkit-background-size: 16px 15px;
     background-size: 16px 15px; }
+    @media only screen and (max-width: 768px) {
+      .search-input--main-input {
+        margin: 0 20px; } }
   .search-input--location-input {
     width: 100%;
     max-width: 18.125rem;
     background: #fff url(../img/ic/map-marker.svg) no-repeat 10px center;
     -webkit-background-size: 12px 15px;
     background-size: 12px 15px; }
+    @media only screen and (max-width: 768px) {
+      .search-input--location-input {
+        display: none; } }
 
 .action-btn {
   height: 2.5rem;
@@ -231,3 +281,31 @@ img {
   transition: all .4s; }
   .action-btn:hover {
     background-color: #ace673; }
+  .action-btn--enter {
+    background-color: #e6eef2; }
+    @media only screen and (max-width: 768px) {
+      .action-btn--enter {
+        display: none; } }
+  .action-btn--mobile {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #e6eef2;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    @media only screen and (max-width: 768px) {
+      .action-btn--mobile {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; } }
+    @media only screen and (min-width: 769px) {
+      .action-btn--mobile {
+        display: none; } }
+  @media only screen and (max-width: 768px) {
+    .action-btn--submit {
+      display: none; } }

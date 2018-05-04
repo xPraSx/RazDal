@@ -26,11 +26,20 @@
     &:hover{
         color: $mainColor;
     }
+    @media only screen and (max-width : 768px) {
+        text-transform: capitalize;
+    }
+    @media only screen and (max-width : 480px) {
+        font-size: 0.7rem;
+    }
 }
 
 .new-ads__items{
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+    @media only screen and (max-width : 1350px) {
+        justify-content: space-around;
+    }
 }
 
