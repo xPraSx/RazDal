@@ -246,25 +246,27 @@ img {
   padding: 10px 0; }
 
 .ads-slider {
-  position: relative; }
-  .ads-slider .slick-prev, .ads-slider .slick-next {
+  position: relative;
+  overflow: hidden; }
+  .ads-slider .owl-prev, .ads-slider .owl-next {
     text-indent: -9000px;
     width: 3.125rem;
     height: 3.125rem;
     background-color: #26404d;
-    background-image: url("../img/slder-arrow.png");
+    background-image: url("../img/slder-arrow.png") !important;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     position: absolute;
     top: 50%;
-    margin-top: -25px; }
-  .ads-slider .slick-prev {
-    left: 5px;
+    margin-top: -25px;
+    z-index: 10; }
+  .ads-slider .owl-prev {
+    left: 0px;
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg); }
-  .ads-slider .slick-next {
-    right: 5px; }
+  .ads-slider .owl-next {
+    right: 0px; }
 
 .ad {
   -webkit-flex-basis: 25%;
