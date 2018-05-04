@@ -136,6 +136,9 @@ img {
   transition: all .4s; }
   .trigger-btn:hover {
     background-color: #ffd400; }
+  .trigger-btn--fate {
+    height: 3.125rem;
+    padding: 0 28px; }
 
 .push-info {
   position: absolute;
