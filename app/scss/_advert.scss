@@ -19,6 +19,9 @@
         flex-basis: 33%;
         margin-right: 0;
     }
+    @media only screen and (max-width : 1200px) {
+        margin-bottom: 3px;
+    }
 }
 
 .ad__main-info{

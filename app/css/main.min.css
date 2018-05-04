@@ -223,6 +223,9 @@ img {
       -ms-flex-preferred-size: 33%;
       flex-basis: 33%;
       margin-right: 0; } }
+  @media only screen and (max-width: 1200px) {
+    .ad {
+      margin-bottom: 3px; } }
 
 .ad__main-info {
   line-height: 1.25rem;
@@ -467,6 +470,9 @@ body, html {
   @media only screen and (max-width: 1350px) {
     .container {
       max-width: 960px; } }
+  @media only screen and (max-width: 1200px) {
+    .container {
+      max-width: 875px; } }
 
 .section-title {
   color: #26404d;
