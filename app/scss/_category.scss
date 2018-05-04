@@ -56,6 +56,9 @@
     &--bulding{
         color: rgb(3, 169, 244);
     }
+    @media only screen and (max-width : 1350px) {
+        flex-basis: 33%;
+    }
 }
 
 .category__desc{

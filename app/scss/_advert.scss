@@ -15,6 +15,10 @@
             color: $mainColor;
         }
     }
+    @media only screen and (max-width : 1350px) {
+        flex-basis: 33%;
+        margin-right: 0;
+    }
 }
 
 .ad__main-info{

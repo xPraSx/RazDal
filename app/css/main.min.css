@@ -69,6 +69,10 @@ img {
 .text-center {
   text-align: center; }
 
+img {
+  max-width: 100%;
+  height: auto; }
+
 .category {
   padding: 10px 0; }
 
@@ -121,6 +125,11 @@ img {
     color: #cddc39; }
   .category__item--bulding {
     color: #03a9f4; }
+  @media only screen and (max-width: 1350px) {
+    .category__item {
+      -webkit-flex-basis: 33%;
+      -ms-flex-preferred-size: 33%;
+      flex-basis: 33%; } }
 
 .category__desc {
   line-height: 1.25rem;
@@ -174,6 +183,11 @@ img {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-top: 50px; }
+  @media only screen and (max-width: 1350px) {
+    .new-ads__items {
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; } }
 
 .seo-text {
   padding: 50px 0;
@@ -203,6 +217,12 @@ img {
     margin-right: 0; }
   .ad:hover .ad__name {
     color: #66cc00; }
+  @media only screen and (max-width: 1350px) {
+    .ad {
+      -webkit-flex-basis: 33%;
+      -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+      margin-right: 0; } }
 
 .ad__main-info {
   line-height: 1.25rem;
@@ -279,6 +299,9 @@ img {
   max-width: 590px;
   width: 100%;
   line-height: 1.25em; }
+  @media only screen and (max-width: 1350px) {
+    .tags {
+      max-width: 400px; } }
 
 .logo-copyright img {
   margin-bottom: 20px; }
@@ -441,6 +464,9 @@ body, html {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+  @media only screen and (max-width: 1350px) {
+    .container {
+      max-width: 960px; } }
 
 .section-title {
   color: #26404d;
